@@ -12,6 +12,12 @@
       href="./images/favicon-32x32.png"
     />
     <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Stats preview card component</title>
 
@@ -26,16 +32,76 @@
       }
     </style>
   </head>
-  <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
+  <body
+    class="bg-[hsl(233_47%_7%)] flex flex-col justify-center items-center h-screen"
+  >
+    <div
+      class="rounded-xl w-[85%] h-[768px] lg:w-[75%] lg:h-[60%] flex lg:flex-row flex-col-reverse bg-[hsl(244_38%_16%)]"
+    >
+      <div class="lg:w-1/2 w-full lg:h-full h-[68%] font-[Inter]">
+        <div class="flex flex-col px-8 py-10 lg:p-20 justify-between h-full">
+          <div class="flex flex-col justify-center items-center gap-7">
+            <div class="lg:text-left text-center">
+              <h1
+                class="text-white text-2xl lg:text-4xl font-bold tracking-[0.002em]"
+              >
+                Get <span class="text-[hsl(277_64%_61%)]">insights</span> that
+                help your business grow.
+              </h1>
+            </div>
+            <div class="lg:text-left text-center">
+              <p class="text-[15px] text-[hsl(0_0%_100%)] opacity-60 leading-6">
+                Discover the benefits of data analytics and make better
+                decisions regarding revenue, customer experience, and overall
+                efficiency.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center lg:mr-8 gap-6"
+          >
+            <div class="flex flex-col lg:items-start text-white items-center">
+              <div class="text-2xl">10k+</div>
+              <div
+                class="text-[hsl(0_0%_100%)] opacity-50 uppercase text-[15px]"
+              >
+                companies
+              </div>
+            </div>
+            <div class="flex flex-col items-center lg:items-start text-white">
+              <div class="text-2xl">314</div>
+              <div
+                class="text-[hsl(0_0%_100%)] opacity-50 uppercase text-[15px]"
+              >
+                templates
+              </div>
+            </div>
+            <div class="flex flex-col items-center lg:items-start text-white">
+              <div class="text-2xl">12m+</div>
+              <div
+                class="text-[hsl(0_0%_100%)] opacity-50 uppercase text-[15px]"
+              >
+                queries
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="lg:w-1/2 lg:bg-[url('../images/image-header-desktop.jpg')] w-full lg:h-full h-[32%] bg-[url('../images/image-header-mobile.jpg')] bg-cover lg:rounded-r-xl max-md:rounded-t-xl"
+      >
+        <div
+          class="w-full h-full bg-[hsl(277_70%_45%)] opacity-[0.65] lg:rounded-r-xl max-md:rounded-t-xl"
+        ></div>
+      </div>
+    </div>
+    <!--         -->
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
